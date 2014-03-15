@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Language Blog | pwlandoll.me</title>
+<link href="/stylesheet1.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+	<div class="header">
+		<img src="/pics/headerCorner.png" align="left" />
+        <img src="/pics/headerStretch.png" align="right" />
+    </div>
+	<div class="menubar">
+        <p class="menubarItems">
+        	&nbsp;&nbsp;
+        	<a href="/">Home</a>
+            &nbsp;&nbsp;\|/&nbsp;&nbsp;
+            <a href="/blog/" style="text-decoration:underline">Blog</a>
+            &nbsp;&nbsp;\|/&nbsp;&nbsp;
+            <a href="/about/">About Me</a>
+        </p>
+	</div>
+    <div class="mainBody">
+    	<p style="text-decoration: underline;">Language Blog for CS270</p>
+        <!-- 
+        <p id="date">
+            <span class="date">
+                date: 
+            </span>
+            Text
+        </p>
+        -->
+        <p id="2014/03/08">
+            <span class="date">
+                2014/03/08:
+            </span>
+            The mid-sized program is complete! 
+            <a href="/work/boo/pigLatin.boo" class="bodylink">pigLatin.boo</a> prompts the user for the name of a text file, reads in the contents, and translates all the translatable words in the file. 
+            It then prompts the user for the name of the output file, then writes the translated contents, creating a file if it has to. 
+            It consists of four methods and a main method. 
+            readInFile() prompts the user for a file name and returns the contents of the file as a string. 
+            firstVowel() takes in a string as a parameter and returns the position of the first vowel as an integer. 
+            pig() takes in a string and an integer as parameters and returns a reordering (according to the rules of Pig Latin) of the string dependent on the integer. 
+            writeOutFile() takes in a string as a parameter and prompts the user for a file name, then writes the contents of the string to a file of the specified name. 
+            <br />
+            <br />
+            There are some great things about Boo that actually made this a lot easier than I had anticipated. 
+            Some of the references I had found before were actually somewhat useless. 
+            For starters, anything reliant on the Useful.IO library wasn't helpful. 
+            I wasn't able to successfully import Useful so I had to look for other options. 
+            The "using" keyword didn't seem to help much for file content manipulation, as I had hoped it would. 
+            What ended up being the most helpful was the fact that Boo is based on .NET, so I tried using reference pages from <a href="http://msdn.microsoft.com/en-us/library/system.io.file(v=vs.110).aspx" class="bodylink">Microsoft</a> to find ideas. 
+            As it turns out I could use methods from .NET's File class, and my task was made much easier. 
+            <br />
+            <br />
+            I also got to learn a little bit of regular expressions. 
+            In the main method, the string of contents from the file is split by whitespace, which was easily done with a regular expression. 
+            I also used a regex to check if a word was eligible for translation, meaning it matched the pattern of being only letters. 
+            I also used regular expressions to replace a word in the contents string with its translation. 
+            Making a regular expression out of a string is as simple as saying Regex(string). 
+        </p>
+    	<p id="2014/02/18">
+    		<span class="date">
+    			2014/02/18:
+    		</span>
+    		This is going to be a little different. 
+    		For starters, I've found that Boo has a quite annoying aspect for beginners - after compiling, the compiler sometimes says "more than one entry point found," but still compiles and runs (seemingly) fine anyways. 
+    		I've also discovered that file input and output works in an unfamiliar way (see the example in the link below). 
+    		I'll have to rethink the way I want to structure my mid-sized program so that file input and output will work. 
+    		<br />
+    		<a href="http://stevedonovan.blogspot.com/2005/05/boo-programming-language.html" class="bodylink">Wandering around .NET: The Boo Programming Language</a>
+    	</p>
+		<p id="2014/02/13">
+			<span class="date">
+				2014/02/13:
+			</span>
+			In anticipation of the final program, I've been looking at the Unity game engine and how to script with that. 
+			From a beginner's standpoint, The Unity software is somewhat confusing, but not too bad. 
+			I found a sample project on Unity's website - a 2D platformer/shooter game. 
+			It looks like I should be able to write scripts to modify existing game components, such as the player's character or the behavior of the enemies. 
+			<br />
+			<br />
+			For this week's class, I was to have an idea for a mid-sized program ready. 
+			From what I've seen, Boo's .NET resources and typing allow for easy file input and output. 
+			I decided to try writing a Pig Latin translator that will open a file, convert the words into Pig Latin, and write the translation to another file. 
+			I might be able to make it possible to translate from Pig Latin back to English, but I haven't decided if I can do that yet. 
+			<br />
+			<br />
+			I'm also interested in figuring out GUI programming for Boo. Since it is based on .NET, it may be possible to use Visual Studio to program a GUI. 
+			<br />
+			<br />
+			Some resources for the program include: 
+			<br />
+			<ul style="margin-left:20px;">
+				<li><a href="http://www.infoq.com/articles/boo-intro/" class="bodylink">Much ado about Boo</a></li>
+				<li><a href="http://boo.codehaus.org/Regular+Expressions" class="bodylink">Boo - Regular Expressions</a></li>
+			</ul>
+		</p>
+    	<p id="2014/01/29">
+    		<span class="date">
+    			2014/01/29:
+    		</span>
+    		This week I started to learn more about the language's behavior. 
+    		From my experience with VB.NET last semester, I can see some signs that Boo runs on the .NET environment - for instance, the .ToString() method for casting integers to strings, as seen in <a href="/work/boo/fizzbuzz.boo" class="bodylink">fizzbuzz.boo</a>. 
+    		<br />
+			<br />
+			For this week's class, I was to have the code for <a href="/work/boo/helloworld.boo" class="bodylink">helloworld.boo</a> finished.
+    	</p>
+        <p id="2014/01/23">
+            <span class="date">
+                2014/01/23:
+            </span> 
+            Last week I started learning Boo. 
+            Boo is a scripting language based on the .NET environment, and is used in the Unity game engine. 
+            From what I've seen so far, it looks and functions very much like Python, but with a few different characteristics. 
+            Boo scripts can be compiled into .exe files and run on Windows (or on *nix OS's with <a href="http://www.mono-project.com/Main_Page" class="bodylink">Mono</a>). 
+            The 'Hello World' program is simply &lt;print "Hello, world!"&gt;.
+		</p>
+		<br />
+		<br />
+    </div>
+</body>
+</html>
