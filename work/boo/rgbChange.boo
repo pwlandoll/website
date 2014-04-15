@@ -1,6 +1,8 @@
 import UnityEngine
 import System.Collections
 
+// Script for Unity
+// Attach to game object, and on keypress the object turns colors
 
 public class ExampleBehaviourScript(MonoBehaviour):
 
