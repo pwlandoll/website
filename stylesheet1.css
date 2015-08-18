@@ -3,71 +3,71 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu);
 
 div.header {
-	width: 100%;
-	height: 100px;
-	background: url(/pics/headerStretch.png);
-	margin: 0px;
+    width: 100%;
+    height: 100px;
+    background: url(/pics/headerStretch.png);
+    margin: 0px;
 }
 
 div.menubar {
-	background: url(/pics/menuBar.png);
-	height: 50px;
-	width: 100%;
-	font-size:20px;
-	color: white;
-	margin: 0px;
+    background: url(/pics/menuBar.png);
+    height: 50px;
+    width: 100%;
+    font-size:20px;
+    color: white;
+    margin: 0px;
 }
 
 p.menubarItems {
-	margin: 0px;
+    margin: 0px;
 }
 
 body {
-	background-image: url(/pics/sideBar.png);
-	background-position: left;
-	background-repeat: repeat-y;
-	margin: 0px;
-	font-family: 'Ubuntu', sans-serif;
+    background-image: url(/pics/sideBar.png);
+    background-position: left;
+    background-repeat: repeat-y;
+    margin: 0px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 div.mainBody {
-	margin-top: 0px;
-	margin-left: 155px;
-	margin-right: 5px;
+    margin-top: 0px;
+    margin-left: 155px;
+    margin-right: 5px;
 }
 
 div.footer {
-	position:absolute;
-	bottom:10px;
-	margin-left:155px;
+    position:absolute;
+    bottom:10px;
+    margin-left:155px;
 }
 
 a:link {
-	color: #9FF;
-	text-decoration: none;
+    color: #9FF;
+    text-decoration: none;
 }
 
 a:visited {
-	color: #9FF;
-	text-decoration: none;
+    color: #9FF;
+    text-decoration: none;
 }
 
 a.mailto {
-	color:#09F;
+    color:#09F;
 }
 
 a.bodylink {
-	color: #09F;
-	text-decoration: none;
+    color: #09F;
+    text-decoration: none;
 }
 
 * {
-  padding: 0px; 
-  outline: none;
-  border: 0px;
+    padding: 0px; 
+    outline: none;
+    border: 0px;
 }
 
 span.date {
-	font-weight: bold;
-	text-decoration: underline;
+    font-weight: bold;
+    text-decoration: underline;
 }
