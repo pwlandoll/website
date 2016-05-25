@@ -1,5 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+
 * {
     padding: 0;
     margin: 0;
@@ -12,8 +14,10 @@ body {
     padding: 1%;
     text-align: justify;
     line-height: 24px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
+/* Navigation bar formatting */
 nav {
     width: 100%;
     margin: 1% auto;
@@ -41,4 +45,37 @@ nav li a:hover, nav li.active a {
 }
 nav li:last-child a {
     border: none;
+}
+
+/* Body sections formatting */
+section {
+    float: left;
+    width: 100%;
+    padding: 1%;
+    margin: 1% 0;
+}
+footer {
+    float: left;
+    width: 100%;
+    padding: 1%;
+    margin: 1% 0;
+}
+
+@media only screen and (max-width: 640px) {
+    nav {
+        margin: 2% auto;
+    }
+    nav li a {
+        width: 50%;
+        font-size: 90%;
+    }
+    nav li:nth-child(even) a {
+        border-right: none;
+    }
+    nav li:nth-child(1) a, nav li:nth-child(2) a {
+        border-bottom: 1px solid black;
+    }
+    p {
+        font-size: 85%;
+    }
 }
